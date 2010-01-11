@@ -1,0 +1,56 @@
+---
+  filter: sass
+  extension: css
+  layout: nil
+---
+!blueprint_grid_columns = 18
+
+@import blueprint.sass
+@import blueprint/scaffolding.sass
+@import compass/utilities.sass
+
++blueprint-scaffolding("body.bp")
++blueprint-interaction
++blueprint-debug("body.bp")
+
+body.bp
+  +blueprint-typography(true)
+  background-color: #8a8a8a
+  color: #333
+  font: 80% 'Lucida Grande', Tahoma, sans-serif
+  #wrapper
+    +container
+    -moz-border-radius: 8px
+    -webkit-border-radius: 8px
+    border-radius: 8px
+    background-color: #fff
+    border: 1px solid #e0e7b8
+    margin: 2em auto
+    padding: 20px
+    #header
+      +column(18)
+      position: relative
+      margin: 0 0 4em 0
+      h1
+        margin: 0
+        padding: 0
+        font-weight: bold
+      ul
+        +horizontal-list
+        position: absolute
+        right: 0
+        top: 10px
+        margin: 0
+        padding: 0
+        font-size: 130%
+        li a
+          +hover-link
+    #content
+      +column(18)
+      #images
+        +column(7)
+        img
+          width: 128px
+          margin: 0 auto
+      #about
+        +column(11, true)

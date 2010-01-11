@@ -1,0 +1,30 @@
+---
+extension: html
+filter:    haml
+---
+!!!
+%html{:xmlns => "http://www.w3.org/1999/xhtml",  "xml:lang" => "en",  :lang => "en-us"}
+  %head
+    %meta{"http-equiv" => "content-type", :content => "text/html; charset=utf-8"}
+    %title= @page.title
+    %meta{:name => "author", :content => @page.author}
+    %link{:rel => "stylesheet", :href => "/stylesheets/screen.css", :type => "text/css", :media => "screen, projection"}
+  %body.bp
+    #wrapper
+      #header
+        %h1 Chris Moore
+        %ul
+          %li= link_to('blog', 'http://blog.cdmwebs.com/', :title => 'Where I tumble')
+          %li= link_to('facebook', 'http://facebook.com/cdmwebs', :title => 'Where I hang out with friends')
+          %li= link_to('twitter', 'http://twitter.com/cdmwebs', :title => 'Where I tweet')
+          %li= link_to('pictures', 'http://flickr.com/photos/cdmwebs', :title => 'Where I dump photos')
+          %li= link_to('code', 'http://github.com/cdmwebs', :title => 'Where I deposit my repositories')
+          %li= link_to('company', 'http://26webs.com', :title => 'Where I earn my keep')
+          %li= link_to('résumé', 'resume.html', :title => 'Where I list my accomplishments')
+      #content 
+        #images
+          %img{:src => 'images/cdmwebs.jpg'}
+          %img{:src => 'images/cdmwebs-avatar.jpg'}
+        #about
+          %p 
+            I'm Chris Moore.
