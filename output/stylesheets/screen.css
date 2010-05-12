@@ -346,7 +346,7 @@ body.resume #wrapper #resume .job:hover {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
-  background-color: rgba(230, 230, 230, 0.7);
+  background-color: rgba(248, 248, 236, 0.9);
 }
 /* line 161, output/stylesheets/screen.css */
 body.resume #wrapper #resume .job h5 {

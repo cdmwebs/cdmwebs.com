@@ -93,64 +93,63 @@ h4 {
   width: 720px;
   margin: 0 auto;
   overflow: hidden;
-  margin-top: 1em;
 }
-/* line 23, output/stylesheets/print.css */
+/* line 22, output/stylesheets/print.css */
 #wrapper a {
   color: #333;
   text-decoration: none;
 }
-/* line 27, output/stylesheets/print.css */
+/* line 26, output/stylesheets/print.css */
 #wrapper .vcard .fn {
   display: block;
   float: left;
   font-size: 200%;
   font-weight: bold;
 }
-/* line 32, output/stylesheets/print.css */
+/* line 31, output/stylesheets/print.css */
 #wrapper .vcard .addr, #wrapper .vcard span.email {
   clear: both;
   display: block;
 }
-/* line 36, output/stylesheets/print.css */
+/* line 35, output/stylesheets/print.css */
 #wrapper .vcard .addr span.type {
   display: none;
 }
-/* line 38, output/stylesheets/print.css */
+/* line 37, output/stylesheets/print.css */
 #wrapper p {
   clear: both;
   margin: 1em 0;
   line-height: 1.5em;
 }
-/* line 42, output/stylesheets/print.css */
+/* line 41, output/stylesheets/print.css */
 #wrapper ul {
   margin: 1em 2em 0 3em;
 }
-/* line 44, output/stylesheets/print.css */
+/* line 43, output/stylesheets/print.css */
 #wrapper ul.inline {
   list-style: none;
   margin: 1em 0 0 1em;
 }
-/* line 47, output/stylesheets/print.css */
+/* line 46, output/stylesheets/print.css */
 #wrapper ul.inline li {
   display: inline;
 }
-/* line 49, output/stylesheets/print.css */
+/* line 48, output/stylesheets/print.css */
 #wrapper ul li {
   list-style: disc;
   line-height: 1.5em;
   margin: 0 0 0.5em 0;
 }
-/* line 53, output/stylesheets/print.css */
+/* line 52, output/stylesheets/print.css */
 #wrapper .job {
   margin: 2em 0;
 }
-/* line 55, output/stylesheets/print.css */
+/* line 54, output/stylesheets/print.css */
 #wrapper .job h5 {
   float: left;
   margin: 0 0 1em 0;
 }
-/* line 58, output/stylesheets/print.css */
+/* line 57, output/stylesheets/print.css */
 #wrapper .job h5.dates {
   float: right;
 }
