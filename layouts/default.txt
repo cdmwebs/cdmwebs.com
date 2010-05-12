@@ -9,22 +9,36 @@ filter:    haml
     %title= @page.title
     %meta{:name => "author", :content => @page.author}
     %link{:rel => "stylesheet", :href => "/stylesheets/screen.css", :type => "text/css", :media => "screen, projection"}
-  %body.bp
+    %link{:rel => "stylesheet", :href => "/stylesheets/print.css", :type => "text/css", :media => "print"}
+  %body{:class => @page.body_class}
     #wrapper
-      #header
-        %h1 Chris Moore
-        %ul
-          %li= link_to('blog', 'http://blog.cdmwebs.com/', :title => 'Where I tumble')
-          %li= link_to('facebook', 'http://facebook.com/cdmwebs', :title => 'Where I hang out with friends')
-          %li= link_to('twitter', 'http://twitter.com/cdmwebs', :title => 'Where I tweet')
-          %li= link_to('pictures', 'http://flickr.com/photos/cdmwebs', :title => 'Where I dump photos')
-          %li= link_to('code', 'http://github.com/cdmwebs', :title => 'Where I deposit my repositories')
-          %li= link_to('company', 'http://26webs.com', :title => 'Where I earn my keep')
-          %li= link_to('résumé', 'resume.html', :title => 'Where I list my accomplishments')
+      - unless @page.header == false
+        #header
+          %h1 Chris Moore
+          %ul
+            %li= link_to('blog', 'http://blog.cdmwebs.com/', :attrs => { :title => 'Where I tumble' })
+            %li= link_to('facebook', 'http://facebook.com/cdmwebs', :attrs => { :title => 'Where I hang out with friends' })
+            %li= link_to('twitter', 'http://twitter.com/cdmwebs', :attrs => { :title => 'Where I tweet' })
+            %li= link_to('pictures', 'http://flickr.com/photos/cdmwebs', :attrs => { :title => 'Where I dump photos' })
+            %li= link_to('code', 'http://github.com/cdmwebs', :attrs => { :title => 'Where I deposit my repositories' })
+            %li= link_to('company', 'http://26webs.com', :attrs => { :title => 'Where I earn my keep' })
+            %li= link_to('résumé', 'resume.html', :attrs => { :title => 'Where I list my accomplishments' })
       #content 
-        #images
-          %img{:src => 'images/cdmwebs.jpg'}
-          %img{:src => 'images/cdmwebs-avatar.jpg'}
-        #about
-          %p 
-            I'm Chris Moore.
+        = @content
+      #footer
+        %p
+          This website was created with 
+          = link_to('Webby', "http://webby.rubyforge.org"), "."
+  :javascript
+    var _gaq = _gaq || [];
+    _gaq.push(
+      ['_setAccount', 'UA-636525-1'],
+      ['_setDomainName', '.cdmwebs.com'],
+      ['_trackPageview']
+    );
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ga);
+    })();

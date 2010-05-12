@@ -3,54 +3,168 @@
   extension: css
   layout: nil
 ---
-!blueprint_grid_columns = 18
+@import reset.sass
+@import grid.sass
+@import base.sass
 
-@import blueprint.sass
-@import blueprint/scaffolding.sass
-@import compass/utilities.sass
-
-+blueprint-scaffolding("body.bp")
-+blueprint-interaction
-+blueprint-debug("body.bp")
-
-body.bp
-  +blueprint-typography(true)
-  background-color: #8a8a8a
-  color: #333
-  font: 80% 'Lucida Grande', Tahoma, sans-serif
+body
+  vertical-align: baseline
+  background: url(/images/cincinnati.jpeg) no-repeat 50% 20% #29481f
+  background-attachment: fixed
+  line-height: 1.9
+  font: 90% Helvetica, 'Lucida Grande', Tahoma, sans-serif
+  margin: 1em 0
+  p
+    margin: 1em 0
   #wrapper
-    +container
-    -moz-border-radius: 8px
-    -webkit-border-radius: 8px
-    border-radius: 8px
-    background-color: #fff
-    border: 1px solid #e0e7b8
-    margin: 2em auto
-    padding: 20px
+    +row
+    +radius(10px)
+    background-color: rgba(0,0,0,.75)
+    color: #fff
+    padding: 1em 1em .5em 1em
+    a
+      color: #999
+      text-decoration: none
+      &:hover
+        text-decoration: underline
     #header
-      +column(18)
-      position: relative
-      margin: 0 0 4em 0
+      +row
       h1
-        margin: 0
-        padding: 0
+        +column(4)
+        color: #fff
         font-weight: bold
+        font-size: 28px
+        margin: 10px
       ul
-        +horizontal-list
-        position: absolute
-        right: 0
-        top: 10px
-        margin: 0
-        padding: 0
-        font-size: 130%
-        li a
-          +hover-link
+        +column(8)
+        padding: 1em 0 0 0
+        text-align: right
+        li
+          display: inline
+          padding: 0 2px
     #content
-      +column(18)
+      +row
       #images
-        +column(7)
+        +column(5)
+        padding-top: 1em
         img
-          width: 128px
-          margin: 0 auto
+          padding-right: 5px
+          width: 130px
       #about
-        +column(11, true)
+        +column(7)
+    #footer
+      +column(12)
+      p
+        text-align: center
+        font-size: 80%
+        color: #999
+      a
+        color: #bbb
+  #flickr_badge_uber_wrapper 
+    +row
+    padding: 2em 0 0 0
+    text-align: left
+  #flickr_badge_wrapper 
+    padding: 10px 0 10px 0
+  .flickr_badge_image 
+    margin: 0 10px 10px 10px
+    display: inline
+  .flickr_badge_image img 
+  #flickr_badge_source 
+    text-align: left
+    margin: 0 10px 0 10px
+  #flickr_badge_icon 
+    float: left
+    margin-right: 5px
+  #flickr_www 
+    display: block
+    padding: 0 10px 0 10px !important
+    font-size: 80%
+    a
+      font: 100% Arial, Helvetica, Sans serif !important
+      color: #3993ff !important
+      font-weight: 600
+  #flickr_badge_uber_wrapper 
+    a:hover, a:link, a:active, a:visited 
+      text-decoration: none !important
+      background: inherit !important
+      color: #3993ff
+  #flickr_badge_wrapper 
+  #flickr_badge_source 
+    padding: 0 !important
+    font:  11px Arial, Helvetica, Sans serif !important
+    color: #666666 !important
+body.resume
+  #wrapper
+    +row
+    +opacity(0.95)
+    +radius(4px)
+    background-color: #fff
+    color: #333
+    padding: 1em 1em .5em 1em
+    a
+      color= #1c7839
+      text-decoration: none
+      &:hover
+        text-decoration: underline
+    h2
+      border-bottom: 2px solid #e0e7b8
+      clear: both
+      font-size: 140%
+      margin: 1em 0 0 0
+      padding-bottom: 3px
+    h3
+      font-size: 120%
+    h4
+      font-size: 110%
+    #header
+      +column(12)
+      text-align: center
+    #resume
+      +column(12)
+      .vcard
+        padding: 10px
+        background: #f8f8ec
+        +radius(8px)
+        .fn
+          display: block
+          float: left
+          font-size: 200%
+          font-weight: bold
+        .addr, span.email
+          clear: both
+          display: block
+        .addr
+          span.type
+            display: none
+        a.n:hover:after, a.fn:hover:after
+          content: " (" attr(rel) ") "
+          color: #636958
+          padding-left: 0.3em
+      p
+        clear: both
+        margin: 1em 0
+        line-height: 1.5em
+      ul
+        margin: 1em 2em 0 3em
+        &.inline
+          list-style: none
+          margin: 1em 0 0 1em
+          li
+            display: inline
+            padding: 0 0 0 0
+        li
+          line-height: 1.5em
+          margin: 0 0 0.5em 0
+          list-style: disc
+      .job
+        margin: 1em 0
+        padding: 1em
+        &:hover
+          +radius(5px)
+          background-color: rgba(230, 230, 230, 0.7)
+        h5
+          float: left
+          margin: 0 0 1em 0
+          &.dates
+            float: right

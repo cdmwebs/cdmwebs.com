@@ -2,476 +2,239 @@
 title:       Chris Moore's Résumé
 created_at:  2009-12-02 14:06:40.000000 -05:00
 author:      Chris Moore
+header:      false
+body_class:  resume
 filter:
   - haml
-layout: none
-extension: html
 ---
-!!! Strict
-%html{ :xmlns => "http://www.w3.org/1999/xhtml" }
-  %head
-    %title
-      Chris Moore&#39;s Résumé
-    %meta{ :content => "text/html;charset=utf-8", "http-equiv" => "Content-Type" }
-    %style{ :type => "text/css", :media => 'screen, projection' }
-      :sass
-        html, body, div, span, applet, object, iframe,
-        h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-        a, abbr, acronym, address, big, cite, code,
-        del, dfn, em, font, img, ins, kbd, q, s, samp,
-        small, strike, strong, sub, sup, tt, var,
-        b, u, i, center,
-        dl, dt, dd, ol, ul, li,
-        fieldset, form, label, legend,
-        table, caption, tbody, tfoot, thead, tr, th, td
-          margin: 0
-          padding: 0
-          border: 0
-          outline: 0
-          font-size: 100%
-          vertical-align: baseline
-          background: transparent
-        body
-          line-height: 1.3
-          background-color: #8a8a8a
-          color: #333
-          font: 80% 'Lucida Grande', Tahoma, sans-serif
-        blockquote, q
-          quotes: none
-          &:before, &:after
-            content: ''
-            content: none
-        \:focus
-          outline: 0
-        ins
-          text-decoration: none
-        del
-          text-decoration: line-through
-        table
-          border-collapse: collapse
-          border-spacing: 0
-        h2
-          border-bottom: 2px solid #e0e7b8
-          clear: both
-          font-size: 140%
-          margin: 1em 0 0 0
-          padding-bottom: 3px
-        h3
-          font-size: 120%
-        h4
-          font-size: 110%
-        #page
-          -moz-border-radius: 8px
-          -webkit-border-radius: 8px
-          border-radius: 8px
-          background-color: #fff
-          border: 1px solid #e0e7b8
-          margin: 2em auto
-          width: 660px
-          padding: 20px
-        .vcard
-          background: #f8f8ec
-          padding: 8px
-          -moz-border-radius: 8px
-          border-radius: 8px
-          margin: 0
-          .fn
-            display: block
-            float: left
-            font-size: 200%
-            font-weight: bold
-          .addr, span.email
-            clear: both
-            display: block
-          .addr
-            span.type
-              display: none
-          a.n:hover:after, a.fn:hover:after
-            content: " (" attr(rel) ") "
-            color: #636958
-            padding-left: 0.3em
-        .job
-          margin: 2em 0
-        p
-          clear: both
-          margin: 1em 0
-          line-height: 1.5em
-        ul
-          margin: 1em 2em 0 3em
-          &.inline
-            list-style: none
-            margin: 1em 0 0 1em
-            li
-              display: inline
-              border-right: 2px solid #f8f8ec
-              padding: 0 4px
-              &:last-child
-                border-right: none
-          li
-            line-height: 1.5em
-            margin: 0 0 0.5em 0
-        .job
-          h5
-            float: left
-            margin: 0 0 1em 0
-            &.dates
-              float: right
-    %style{ :type => "text/css", :media => 'print' }
-      :sass
-        html, body, div, span, applet, object, iframe,
-        h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-        a, abbr, acronym, address, big, cite, code,
-        del, dfn, em, font, img, ins, kbd, q, s, samp,
-        small, strike, strong, sub, sup, tt, var,
-        b, u, i, center,
-        dl, dt, dd, ol, ul, li,
-        fieldset, form, label, legend,
-        table, caption, tbody, tfoot, thead, tr, th, td
-          margin: 0
-          padding: 0
-          border: 0
-          outline: 0
-          font-size: 100%
-          vertical-align: baseline
-          background: transparent
-        body
-          line-height: 1.3
-        a
-          color: #333
-          text-decoration: none
-        blockquote, q
-          quotes: none
-          &:before, &:after
-            content: ''
-            content: none
-        \:focus
-          outline: 0
-        ins
-          text-decoration: none
-        del
-          text-decoration: line-through
-        table
-          border-collapse: collapse
-          border-spacing: 0
-        body
-          background-color: #8a8a8a
-          color: #333
-          font: 80% 'Lucida Grande', Tahoma, sans-serif
-        h2
-          border-bottom: 2px solid #e0e7b8
-          clear: both
-          font-size: 140%
-          margin: 1em 0 0 0
-          padding-bottom: 3px
-        h3
-          font-size: 120%
-        h4
-          font-size: 110%
-        #page
-          background-color: #fff
-          margin: 2em auto
-          width: 660px
-          padding: 20px
-        .vcard
-          background: #f8f8ec
-          padding: 8px
-          -moz-border-radius: 8px
-          border-radius: 8px
-          margin: 0
-          .fn
-            display: block
-            float: left
-            font-size: 200%
-            font-weight: bold
-          .addr, span.email
-            clear: both
-            display: block
-          .addr
-            span.type
-              display: none
-          a.n:hover:after, a.fn:hover:after
-            content: " (" attr(rel) ") "
-            color: #636958
-            padding-left: 0.3em
-        .job
-          margin: 2em 0
-        p
-          clear: both
-          margin: 1em 0
-          line-height: 1.5em
-        ul
-          margin: 1em 2em 0 3em
-          &.inline
-            list-style: none
-            margin: 1em 0 0 1em
-            li
-              display: inline
-              border-right: 2px solid #f8f8ec
-              padding: 0 4px
-              &:last-child
-                border-right: none
-          li
-            line-height: 1.5em
-            margin: 0 0 0.5em 0
-        .job
-          h5
-            float: left
-            margin: 0 0 1em 0
-            &.dates
-              float: right
-  %body
-    #page
-      .vcard
-        .fn
-          Chris Moore
-        .addr
-          %span.type
-            Home
-          %span.street-address
-            6181 Woodcrest Drive
-          %br
-          %span.locality
-            Burlington
-          %abbr.region{ :title => "South Carolina" }
-            KY
-          %span.postal-code
-            41005
-          %span.country-name
-            USA
-        %span.tel
-          %span.type
-            Mobile
-          +1.513.201.7829
-        %span.email
-          %a{ :href => "mailto:cdmwebs@gmail.com" }
-            cdmwebs@gmail.com
-      %h2
-        Experience
-      .job.present
-        %h3
-          %a{ :href => "http://26webs.com/" }
-            26Webs LLC
-        %h4
-          Owner, Consultant
-        %h5
-          Boiling Springs, SC
-        %h5.dates
-          2005 - Present
-        %p
-          Work with businesses, organizations and entrepreneurs to create and
-          implement	technology solutions to promote efficiency and improve
-          communication.
-        %ul.duties
-          %li
-            Specific industry focus: distribution and transportation.  Work with
-            port-side logistics companies in the Charleston area to develop
-            web-based traffic management solutions.
-          %li
-            Create intermodal solution for client allowing pickup to delivery
-            tracking and billing of intermodal containers.  Completely web-based.
-            Written using Ruby and the Rails framework.
-          %li
-            Develop online scheduling system for client with several medical
-            clinics.  Allows users to schedule office visits and in-home appointments
-            independently.
-          %li
-            Design and develop web based applications for Charleston area
-            businesses.
-          %li
-            Developed partnership with Bozack (a local design studio) to do all
-            back-end web programming for several clients.
-          %li
-            Promote use of Open Source Software as a viable replacement for
-            proprietary solutions whenever possible.
-          %li
-            Manage all aspects of business: finance and accounting, payroll,
-            taxes, sales and marketing.
-      .job
-        %h3
-          %a{ :href => "http://pcssinc.com/" }
-            PCSS, Inc.
-        %h4
-          Senior Development Engineer
-        %h5
-          Boiling Springs, SC
-        %h5.dates
-          2009
-        %p
-          Design and develop web based applications using Linux, the Ruby on
-          Rails	framework, ExtJS Framework and MySQL databases.
-        %ul.duties
-          %li
-            Design and develop RoR application for jury management.
-          %li
-            Extensive use of ActiveResource to allow cross domain communication
-            within the application(s).
-          %li
-            Design and develop HTML public facing site to allow jurors to view
-            upcoming appointments, fill out questionnaires and review financial
-            activity.
-          %li
-            Setup staging environments for demonstration of applications using
-            Ubuntu Linux, Apache web server and capistrano.
-          %li
-            Set up
-            %a{ :href => "http://getsprockets.org/" } sprockets
-            to concatenate and minify all JavaScript assets
-            from over fifty individual source files to a single compressed javascript
-            file weighing in at approximately one-fifth the original size.
-      .job
-        %h3
-          %a{ :href => "http://sc.gov/" }
-            South Carolina Budget and Control Board, Office of Research &amp; Statistics
-        %h4
-          Applications Analyst II
-        %h5
-          Columbia, SC
-        %h5.dates
-          2008
-        %p
-          Design and develop web based applications using Linux, the Ruby on
-          Rails	framework and MySQL databases. Also, support legacy PHP and ASP
-          applications.
-        %ul.duties
-          %li
-            Design and develop Rails application for three state agencies to
-            collaborate on record keeping and information sharing.
-          %li
-            Application is HIPAA compliant as medical information is stored
-            and potentially shared amongst other agencies.
-          %li
-            Migrated existing Rails applications from FastCGI deployment on Apache
-            to proxied thin instances for substantial speed improvement.
-      .job.previous
-        %h3
-          %a{ :href => "http://imsco.com/" }
-            TFE Logistics Group
-        %h4
-          Project Manager
-        %h5
-          Spartanburg, SC
-        %h5.dates
-          2001 - 2005
-        %p
-          Manage all projects related to distribution operations and technology
-          for all adidas America Distribution accounts.	Develop, implement and
-          maintain strategic solutions to increase efficiency and facility
-          throughput.
-        %ul.duties
-          %li
-            Re-engineer entire outbound operations departments to create a more
-            efficient flow of product.  Added position of Process Control to monitor
-            all aspects of outbound operations and interact with Operations Managers
-            to ensure goods flowed continuously.
-          %li
-            Create user-friendly applications using MS Access with direct
-            connections to data sources allowing for quick and easy data transfer from
-            warehouse management system. Applications are used in multiple departments,
-            from inventory control to shipping.
-          %li
-            Re-write logic in WMS to ensure containers were loaded to the correct
-            outbound trailers.
-          %li
-            Create, design and develop web-based reporting tool with real-time
-            connection to Oracle 10g database containing WMS data.  Project began as
-            simple user tool and became a facility wide reporting system.  Still in
-            use today.  Developed using Open Source Software - Apache web server, PHP
-            scripting language, XHTML, CSS and Oracle Call Interface (OCI).
-          %li
-            Develop Oracle PL/SQL procedures to calculate level of service required
-            as well as customer required ship dates and special handling requirements
-            and apply to all incoming orders.  Allows for greater visibility and
-            increased on-time shipments.
-      .job.previous
-        %h3
-          %a{ :href => "http://ups.com/" }
-            UPS Supply Chain Solutions (Honeywell CPG Account)
-        %h4
-          Information Systems Technician
-        %h5
-          Hebron, KY
-        %h5.dates
-          1998-2001
-        %p
-          Provide first level user support to all system users, including warehouse
-          associates,	office staff and management. Supported all servers, radio
-          frequency networks and devices, cabling and networks.
-        %ul.duties
-          %li
-            Developed applications to track and analyze wave run times, analyze
-            sortation errors, and optimize shipment planning functions.
-          %li
-            Worked as on-site help desk technician. Answered calls from entire
-            warehouse staff. Issues ranged from general desktop support to warehouse
-            control system support.
-          %li
-            Volunteered to work as a backup Shipment Planner and Process
-            Controller in order to better understand the needs of the facility.
-        %h2
-          Languages
-        %ul.inline
-          %li
-            %a{ :href => "http://ruby-lang.org" } Ruby
-          %li
-            %a{ :href => "http://haml-lang.com/" } Haml
-          %li
-            %a{ :href => "http://sass-lang.com/" } Sass
-          %li XHTML
-          %li CSS
-          %li
-            %a{ :href => "http://php.net" } PHP
-          %li
-            %a{ :href => "http://www.perl.org/" } Perl
-          %li SQL
-          %li VB
-          %li VBA
-          %li VB.NET
-          %li ASP (Classic &amp; .net)
-          %li COBOL
-          %li RPG ILE, IV
-        %h2 
-          Frameworks
-        %ul.inline
-          %li
-            %a{ :href => 'http://rubyonrails.com/' } Ruby on Rails
-          %li
-            %a{ :href => 'http://sinatrarb.com' } Sinatra
-          %li
-            %a{ :href => 'http://merbivore.org' } Merb
-          %li
-            %a{ :href => 'http://codeigniter.com/' } CodeIgniter
-          %li
-            %a{ :href => 'http://extjs.com/' } ExtJS
-        %h2
-          Warehouse Management Systems
-        %ul.inline
-          %li Swisslog
-          %li Kewill
-          %li SAP
-          %li ITLS
-          %li WCS AiM
-          %li Manhattan PKMS
-          %li Exeter
-        %h2
-          Operating Systems
-        %ul.inline
-          %li
-            %a{ :href => "http://www.debian.org/" } Linux
-          %li
-            %a{ :href => "http://www.freebsd.org/" } UNIX/FreeBSD
-          %li
-            %a{ :href => "http://apple.com/macosx" } Mac OS X
-          %li
-            %a{ :href => "http://en.wikipedia.org/wiki/IBM_System_i" } IBM AS400 / iSeries
-          %li
-            %a{ :href => "http://www.ibm.com/aix" } IBM AIX
-          %li
-            %a{ :href => "http://microsoft.com/" } Windows (All)
-  :javascript
-    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-  :javascript
-    try {
-      var pageTracker = _gat._getTracker("UA-636525-1");
-      pageTracker._trackPageview();
-    } catch(err) {}
+#header
+  %p 
+    = link_to("&larr; Back", '/')
+    |
+    Would you prefer a PDF?
+    = link_to('Here you are!', 'images/cdm_resume.pdf')
+#resume
+  .vcard
+    .fn
+      Chris Moore
+    .addr
+      %span.type
+        Home
+      %span.street-address
+        726 Oak St
+      %br
+      %span.locality
+        Ludlow
+      %abbr.region{ :title => "Kentucky" }
+        KY
+      %span.postal-code
+        41016
+      %span.country-name
+        USA
+    %span.tel
+      %span.type
+        Mobile
+      +1.513.201.7829
+    %span.email
+      %a{ :href => "mailto:chris@cdmwebs.com" }
+        chris@cdmwebs.com
+  %h2
+    Experience
+  .job.present
+    %h3
+      %a{ :href => "http://26webs.com/" }
+        26Webs LLC
+    %h4
+      Owner, Consultant
+    %h5
+      Boiling Springs, SC
+    %h5.dates
+      2005 - Present
+    %p
+      Work with businesses, organizations and entrepreneurs to create and
+      implement	technology solutions to promote efficiency and improve
+      communication.
+    %ul.duties
+      %li
+        Specific industry focus: distribution and transportation.  Work with
+        port-side logistics companies in the Charleston area to develop
+        web-based traffic management solutions.
+      %li
+        Create intermodal solution for client allowing pickup to delivery
+        tracking and billing of intermodal containers.  Completely web-based.
+        Written using Ruby and the Rails framework.
+      %li
+        Develop online scheduling system for client with several medical
+        clinics.  Allows users to schedule office visits and in-home appointments
+        independently.
+      %li
+        Design and develop web based applications for Charleston area
+        businesses.
+      %li
+        Developed partnership with Bozack (a local design studio) to do all
+        back-end web programming for several clients.
+      %li
+        Promote use of Open Source Software as a viable replacement for
+        proprietary solutions whenever possible.
+      %li
+        Manage all aspects of business: finance and accounting, payroll,
+        taxes, sales and marketing.
+  .job
+    %h3
+      %a{ :href => "http://pcssinc.com/" }
+        PCSS, Inc.
+    %h4
+      Senior Development Engineer
+    %h5
+      Boiling Springs, SC
+    %h5.dates
+      2009
+    %p
+      Design and develop web based applications using Linux, the Ruby on
+      Rails	framework, ExtJS Framework and MySQL databases.
+    %ul.duties
+      %li
+        Design and develop RoR application for jury management.
+      %li
+        Extensive use of ActiveResource to allow cross domain communication
+        within the application(s).
+      %li
+        Design and develop HTML public facing site to allow jurors to view
+        upcoming appointments, fill out questionnaires and review financial
+        activity.
+      %li
+        Setup staging environments for demonstration of applications using
+        Ubuntu Linux, Apache web server and capistrano.
+      %li
+        Set up
+        %a{ :href => "http://getsprockets.org/" } sprockets
+        to concatenate and minify all JavaScript assets
+        from over fifty individual source files to a single compressed javascript
+        file weighing in at approximately one-fifth the original size.
+  .job
+    %h3
+      %a{ :href => "http://sc.gov/" }
+        South Carolina Budget and Control Board, Office of Research &amp; Statistics
+    %h4
+      Applications Analyst II
+    %h5
+      Columbia, SC
+    %h5.dates
+      2008
+    %p
+      Design and develop web based applications using Linux, the Ruby on
+      Rails	framework and MySQL databases. Also, support legacy PHP and ASP
+      applications.
+    %ul.duties
+      %li
+        Design and develop Rails application for three state agencies to
+        collaborate on record keeping and information sharing.
+      %li
+        Application is HIPAA compliant as medical information is stored
+        and potentially shared amongst other agencies.
+      %li
+        Migrated existing Rails applications from FastCGI deployment on Apache
+        to proxied thin instances for substantial speed improvement.
+  .job.previous
+    %h3
+      %a{ :href => "http://imsco.com/" }
+        TFE Logistics Group
+    %h4
+      Project Manager
+    %h5
+      Spartanburg, SC
+    %h5.dates
+      2001 - 2005
+    %p
+      Manage all projects related to distribution operations and technology
+      for all adidas America Distribution accounts.	Develop, implement and
+      maintain strategic solutions to increase efficiency and facility
+      throughput.
+    %ul.duties
+      %li
+        Re-engineer entire outbound operations departments to create a more
+        efficient flow of product.  Added position of Process Control to monitor
+        all aspects of outbound operations and interact with Operations Managers
+        to ensure goods flowed continuously.
+      %li
+        Create user-friendly applications using MS Access with direct
+        connections to data sources allowing for quick and easy data transfer from
+        warehouse management system. Applications are used in multiple departments,
+        from inventory control to shipping.
+      %li
+        Re-write logic in WMS to ensure containers were loaded to the correct
+        outbound trailers.
+      %li
+        Create, design and develop web-based reporting tool with real-time
+        connection to Oracle 10g database containing WMS data.  Project began as
+        simple user tool and became a facility wide reporting system.  Still in
+        use today.  Developed using Open Source Software - Apache web server, PHP
+        scripting language, XHTML, CSS and Oracle Call Interface (OCI).
+      %li
+        Develop Oracle PL/SQL procedures to calculate level of service required
+        as well as customer required ship dates and special handling requirements
+        and apply to all incoming orders.  Allows for greater visibility and
+        increased on-time shipments.
+  .job.previous
+    %h3
+      %a{ :href => "http://ups.com/" }
+        UPS Supply Chain Solutions (Honeywell CPG Account)
+    %h4
+      Information Systems Technician
+    %h5
+      Hebron, KY
+    %h5.dates
+      1998-2001
+    %p
+      Provide first level user support to all system users, including warehouse
+      associates,	office staff and management. Supported all servers, radio
+      frequency networks and devices, cabling and networks.
+    %ul.duties
+      %li
+        Developed applications to track and analyze wave run times, analyze
+        sortation errors, and optimize shipment planning functions.
+      %li
+        Worked as on-site help desk technician. Answered calls from entire
+        warehouse staff. Issues ranged from general desktop support to warehouse
+        control system support.
+      %li
+        Volunteered to work as a backup Shipment Planner and Process
+        Controller in order to better understand the needs of the facility.
+  %h2
+    Languages
+  %ul.inline
+    %li= link_to('Ruby', "http://ruby-lang.org"), ", "
+    %li= link_to('Haml', "http://haml-lang.com/"), ", "
+    %li= link_to('Sass', "http://sass-lang.com/"), ", "
+    %li XHTML,
+    %li CSS,
+    %li= link_to('PHP', "http://php.net"), ", "
+    %li= link_to('Perl', "http://www.perl.org/"), ", "
+    %li Bash
+  %h2 
+    Frameworks
+  %ul.inline
+    %li= link_to('Ruby on Rails', 'http://rubyonrails.com/'), ", "
+    %li= link_to('Sinatra', 'http://sinatrarb.com'), ", "
+    %li= link_to('Merb', 'http://merbivore.org'), ", "
+    %li= link_to('CodeIgniter', 'http://codeigniter.com/'), ", "
+    %li= link_to('ExtJS', 'http://extjs.com/'), ", "
+  %h2
+    Operating Systems
+  %ul.inline
+    %li= link_to('Mac OS X', "http://apple.com/macosx"), ", "
+    %li= link_to('Linux', "http://www.debian.org/"), ", "
+    %li= link_to('UNIX/BSD', "http://www.freebsd.org/"), ", "
+    %li= link_to('IBM AS400/iSeries', 'http://en.wikipedia.org/wiki/IBM_System_i'), ", "
+    %li= link_to('AIX', "http://www.ibm.com/aix"), ", "
+    %li= link_to('Windows', "http://microsoft.com/")
+  %h2
+    Warehouse Management Systems
+  %ul.inline
+    %li Swisslog,
+    %li Kewill,
+    %li SAP,
+    %li ITLS,
+    %li WCS AiM,
+    %li Manhattan PKMS,
+    %li Exeter

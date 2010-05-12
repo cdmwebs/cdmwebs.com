@@ -1,0 +1,10 @@
+=radius(!units)
+  -webkit-border-radius= !units
+  -moz-border-radius= !units
+  border-radius= !units
+
+=opacity(!opacity)
+  :opacity= !opacity
+  :-moz-opacity= !opacity
+  :-khtml-opacity= !opacity
+  :-ms-filter= "progid:DXImageTransform.Microsoft.Alpha(Opacity=" + round(!opacity*100) + ")"
