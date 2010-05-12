@@ -6,7 +6,7 @@ filter:
   - haml
 ---
 #images
-  %img{:src => 'images/cdmwebs.jpg'}
+  %img{:src => 'images/cdmwebs-thumb.jpg'}
   %img{:src => 'images/cdmwebs-avatar.jpg'}
 #about
   %p 
