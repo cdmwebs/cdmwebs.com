@@ -7,38 +7,44 @@
 @import grid.sass
 @import base.sass
 
+$light_green: #e0e7b8
+
 body
   vertical-align: baseline
   background: url(/images/cincinnati.jpeg) no-repeat 50% 20% #29481f
   background-attachment: fixed
-  line-height: 1.9
-  font: 90% Helvetica, 'Lucida Grande', Tahoma, sans-serif
+  font-size: 90%
+  font-family: "Cantarell", "Helvetica Neue", Helvetica, Arial, sans-serif
+  line-height: 140%
   margin: 1em 0
   p
     margin: 1em 0
+body.home
   #wrapper
     +row
     +radius(10px)
-    background-color: rgba(0,0,0,.75)
+    background-color: rgba(0,0,0,.85)
     color: #fff
     padding: 1em 1em .5em 1em
+    margin-top: 8em
     a
-      color: #999
+      color: #66cbff
+      text-shadow: 0 1px 0 #666
       text-decoration: none
       &:hover
         text-decoration: underline
     #header
       +row
+      margin: 1em 0
       h1
-        +column(4)
+        +column(5)
         color: #fff
-        font-weight: bold
-        font-size: 28px
-        margin: 10px
+        font-size: 24pt
+        line-height: 100%
       ul
-        +column(8)
-        padding: 1em 0 0 0
-        text-align: right
+        +column(7)
+        margin-top: .5em
+        text-align: center
         li
           display: inline
           padding: 0 2px
@@ -49,6 +55,7 @@ body
         padding-top: 1em
         img
           padding-right: 5px
+          height: 128px
       #about
         +column(7)
     #footer
@@ -88,26 +95,28 @@ body
       text-decoration: none !important
       background: inherit !important
       color: #3993ff
-  #flickr_badge_wrapper 
   #flickr_badge_source 
     padding: 0 !important
     font:  11px Arial, Helvetica, Sans serif !important
     color: #666666 !important
 body.resume
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif
   #wrapper
     +row
-    +opacity(0.95)
+    +opacity(0.90)
     +radius(4px)
     background-color: #fff
     color: #333
-    padding: 1em 1em .5em 1em
+    padding: 1em 1em 2em 1em
+    text-shadow: 0 1px 0 #eee
     a
-      color= #1c7839
+      color: #1c7839
+      text-shadow: 0 1px 0 #bbb
       text-decoration: none
       &:hover
         text-decoration: underline
     h2
-      border-bottom: 2px solid #e0e7b8
+      border-bottom: 2px solid $light_green
       clear: both
       font-size: 140%
       margin: 1em 0 0 0
@@ -125,11 +134,12 @@ body.resume
         padding: 10px
         background: #f8f8ec
         +radius(8px)
-        .fn
+        h1.fn
           display: block
           float: left
           font-size: 200%
           font-weight: bold
+          margin: 0 0 .25em 0
         .addr, span.email
           clear: both
           display: block
@@ -157,7 +167,6 @@ body.resume
           margin: 0 0 0.5em 0
           list-style: disc
       .job
-        margin: 1em 0
         padding: 1em
         &:hover
           +radius(5px)
@@ -167,3 +176,5 @@ body.resume
           margin: 0 0 1em 0
           &.dates
             float: right
+    #footer
+      display: none

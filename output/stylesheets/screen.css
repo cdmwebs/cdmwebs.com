@@ -26,13 +26,13 @@ blockquote, q {
 
 /* line 24, /Users/cdmwebs/Sites/cdmwebs.com/content/stylesheets/partials/./_reset.sass */
 blockquote:before, blockquote:after {
-  content: '';
+  content: "";
   content: none;
 }
 
 /* line 30, /Users/cdmwebs/Sites/cdmwebs.com/content/stylesheets/partials/./_reset.sass */
 q:before, q:after {
-  content: '';
+  content: "";
   content: none;
 }
 
@@ -57,81 +57,85 @@ table {
   border-spacing: 0;
 }
 
-/* line 5, output/stylesheets/screen.css */
+/* line 7, output/stylesheets/screen.css */
 body {
   vertical-align: baseline;
   background: url(/images/cincinnati.jpeg) no-repeat 50% 20% #29481f;
   background-attachment: fixed;
-  line-height: 1.9;
-  font: 90% Helvetica, 'Lucida Grande', Tahoma, sans-serif;
+  font-size: 90%;
+  font-family: "Cantarell", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 140%;
   margin: 1em 0;
 }
-/* line 12, output/stylesheets/screen.css */
+/* line 15, output/stylesheets/screen.css */
 body p {
   margin: 1em 0;
 }
-/* line 14, output/stylesheets/screen.css */
-body #wrapper {
+
+/* line 18, output/stylesheets/screen.css */
+body.home #wrapper {
   width: 720px;
   margin: 0 auto;
   overflow: hidden;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   border-radius: 10px;
-  background-color: rgba(0,0,0,.75);
-  color: #fff;
-  padding: 1em 1em .5em 1em;
-}
-/* line 20, output/stylesheets/screen.css */
-body #wrapper a {
-  color: #999;
-  text-decoration: none;
-}
-/* line 23, output/stylesheets/screen.css */
-body #wrapper a:hover {
-  text-decoration: underline;
+  background-color: rgba(0, 0, 0, 0.85);
+  color: white;
+  padding: 1em 1em 0.5em 1em;
+  margin-top: 8em;
 }
 /* line 25, output/stylesheets/screen.css */
-body #wrapper #header {
+body.home #wrapper a {
+  color: #66cbff;
+  text-shadow: 0 1px 0 #666666;
+  text-decoration: none;
+}
+/* line 29, output/stylesheets/screen.css */
+body.home #wrapper a:hover {
+  text-decoration: underline;
+}
+/* line 31, output/stylesheets/screen.css */
+body.home #wrapper #header {
   width: 720px;
   margin: 0 auto;
   overflow: hidden;
+  margin: 1em 0;
 }
-/* line 27, output/stylesheets/screen.css */
-body #wrapper #header h1 {
+/* line 34, output/stylesheets/screen.css */
+body.home #wrapper #header h1 {
   margin: 0 10px;
   overflow: hidden;
   float: left;
   display: inline;
-  width: 220px;
-  color: #fff;
-  font-weight: bold;
-  font-size: 28px;
-  margin: 10px;
+  width: 280px;
+  color: white;
+  font-size: 24pt;
+  line-height: 100%;
 }
-/* line 33, output/stylesheets/screen.css */
-body #wrapper #header ul {
+/* line 39, output/stylesheets/screen.css */
+body.home #wrapper #header ul {
   margin: 0 10px;
   overflow: hidden;
   float: left;
   display: inline;
-  width: 460px;
-  padding: 1em 0 0 0;
-  text-align: right;
+  width: 400px;
+  margin-top: 0.5em;
+  text-align: center;
 }
-/* line 37, output/stylesheets/screen.css */
-body #wrapper #header ul li {
+/* line 43, output/stylesheets/screen.css */
+body.home #wrapper #header ul li {
   display: inline;
   padding: 0 2px;
 }
-/* line 40, output/stylesheets/screen.css */
-body #wrapper #content {
+/* line 46, output/stylesheets/screen.css */
+body.home #wrapper #content {
   width: 720px;
   margin: 0 auto;
   overflow: hidden;
 }
-/* line 42, output/stylesheets/screen.css */
-body #wrapper #content #images {
+/* line 48, output/stylesheets/screen.css */
+body.home #wrapper #content #images {
   margin: 0 10px;
   overflow: hidden;
   float: left;
@@ -139,114 +143,121 @@ body #wrapper #content #images {
   width: 280px;
   padding-top: 1em;
 }
-/* line 45, output/stylesheets/screen.css */
-body #wrapper #content #images img {
+/* line 51, output/stylesheets/screen.css */
+body.home #wrapper #content #images img {
   padding-right: 5px;
+  height: 128px;
 }
-/* line 47, output/stylesheets/screen.css */
-body #wrapper #content #about {
+/* line 54, output/stylesheets/screen.css */
+body.home #wrapper #content #about {
   margin: 0 10px;
   overflow: hidden;
   float: left;
   display: inline;
   width: 400px;
 }
-/* line 49, output/stylesheets/screen.css */
-body #wrapper #footer {
+/* line 56, output/stylesheets/screen.css */
+body.home #wrapper #footer {
   margin: 0 10px;
   overflow: hidden;
   float: left;
   display: inline;
   width: 700px;
 }
-/* line 51, output/stylesheets/screen.css */
-body #wrapper #footer p {
+/* line 58, output/stylesheets/screen.css */
+body.home #wrapper #footer p {
   text-align: center;
   font-size: 80%;
-  color: #999;
+  color: #999999;
 }
-/* line 55, output/stylesheets/screen.css */
-body #wrapper #footer a {
-  color: #bbb;
+/* line 62, output/stylesheets/screen.css */
+body.home #wrapper #footer a {
+  color: #bbbbbb;
 }
-/* line 57, output/stylesheets/screen.css */
-body #flickr_badge_uber_wrapper {
+/* line 64, output/stylesheets/screen.css */
+body.home #flickr_badge_uber_wrapper {
   width: 720px;
   margin: 0 auto;
   overflow: hidden;
   padding: 2em 0 0 0;
   text-align: left;
 }
-/* line 61, output/stylesheets/screen.css */
-body #flickr_badge_wrapper {
+/* line 68, output/stylesheets/screen.css */
+body.home #flickr_badge_wrapper {
   padding: 10px 0 10px 0;
 }
-/* line 63, output/stylesheets/screen.css */
-body .flickr_badge_image {
+/* line 70, output/stylesheets/screen.css */
+body.home .flickr_badge_image {
   margin: 0 10px 10px 10px;
   display: inline;
 }
-/* line 67, output/stylesheets/screen.css */
-body #flickr_badge_source {
+/* line 74, output/stylesheets/screen.css */
+body.home #flickr_badge_source {
   text-align: left;
   margin: 0 10px 0 10px;
 }
-/* line 70, output/stylesheets/screen.css */
-body #flickr_badge_icon {
+/* line 77, output/stylesheets/screen.css */
+body.home #flickr_badge_icon {
   float: left;
   margin-right: 5px;
 }
-/* line 73, output/stylesheets/screen.css */
-body #flickr_www {
+/* line 80, output/stylesheets/screen.css */
+body.home #flickr_www {
   display: block;
   padding: 0 10px 0 10px !important;
   font-size: 80%;
 }
-/* line 77, output/stylesheets/screen.css */
-body #flickr_www a {
+/* line 84, output/stylesheets/screen.css */
+body.home #flickr_www a {
   font: 100% Arial, Helvetica, Sans serif !important;
   color: #3993ff !important;
   font-weight: 600;
 }
-/* line 82, output/stylesheets/screen.css */
-body #flickr_badge_uber_wrapper a:hover, body #flickr_badge_uber_wrapper a:link, body #flickr_badge_uber_wrapper a:active, body #flickr_badge_uber_wrapper a:visited {
+/* line 89, output/stylesheets/screen.css */
+body.home #flickr_badge_uber_wrapper a:hover, body.home #flickr_badge_uber_wrapper a:link, body.home #flickr_badge_uber_wrapper a:active, body.home #flickr_badge_uber_wrapper a:visited {
   text-decoration: none !important;
   background: inherit !important;
   color: #3993ff;
 }
-/* line 87, output/stylesheets/screen.css */
-body #flickr_badge_source {
+/* line 93, output/stylesheets/screen.css */
+body.home #flickr_badge_source {
   padding: 0 !important;
   font: 11px Arial, Helvetica, Sans serif !important;
   color: #666666 !important;
 }
 
-/* line 92, output/stylesheets/screen.css */
+/* line 97, output/stylesheets/screen.css */
+body.resume {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+/* line 99, output/stylesheets/screen.css */
 body.resume #wrapper {
   width: 720px;
   margin: 0 auto;
   overflow: hidden;
-  opacity: 0.95;
-  -moz-opacity: 0.95;
-  -khtml-opacity: 0.95;
-  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=95);
+  opacity: 0.9;
+  -moz-opacity: 0.9;
+  -khtml-opacity: 0.9;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
-  background-color: #fff;
-  color: #333;
-  padding: 1em 1em .5em 1em;
+  background-color: white;
+  color: #333333;
+  padding: 1em 1em 2em 1em;
+  text-shadow: 0 1px 0 #eeeeee;
 }
-/* line 99, output/stylesheets/screen.css */
+/* line 107, output/stylesheets/screen.css */
 body.resume #wrapper a {
   color: #1c7839;
+  text-shadow: 0 1px 0 #bbbbbb;
   text-decoration: none;
 }
-/* line 102, output/stylesheets/screen.css */
+/* line 111, output/stylesheets/screen.css */
 body.resume #wrapper a:hover {
   text-decoration: underline;
 }
-/* line 104, output/stylesheets/screen.css */
+/* line 113, output/stylesheets/screen.css */
 body.resume #wrapper h2 {
   border-bottom: 2px solid #e0e7b8;
   clear: both;
@@ -254,15 +265,15 @@ body.resume #wrapper h2 {
   margin: 1em 0 0 0;
   padding-bottom: 3px;
 }
-/* line 110, output/stylesheets/screen.css */
+/* line 119, output/stylesheets/screen.css */
 body.resume #wrapper h3 {
   font-size: 120%;
 }
-/* line 112, output/stylesheets/screen.css */
+/* line 121, output/stylesheets/screen.css */
 body.resume #wrapper h4 {
   font-size: 110%;
 }
-/* line 114, output/stylesheets/screen.css */
+/* line 123, output/stylesheets/screen.css */
 body.resume #wrapper #header {
   margin: 0 10px;
   overflow: hidden;
@@ -271,7 +282,7 @@ body.resume #wrapper #header {
   width: 700px;
   text-align: center;
 }
-/* line 117, output/stylesheets/screen.css */
+/* line 126, output/stylesheets/screen.css */
 body.resume #wrapper #resume {
   margin: 0 10px;
   overflow: hidden;
@@ -279,7 +290,7 @@ body.resume #wrapper #resume {
   display: inline;
   width: 700px;
 }
-/* line 119, output/stylesheets/screen.css */
+/* line 128, output/stylesheets/screen.css */
 body.resume #wrapper #resume .vcard {
   padding: 10px;
   background: #f8f8ec;
@@ -287,72 +298,76 @@ body.resume #wrapper #resume .vcard {
   -moz-border-radius: 8px;
   border-radius: 8px;
 }
-/* line 123, output/stylesheets/screen.css */
-body.resume #wrapper #resume .vcard .fn {
+/* line 132, output/stylesheets/screen.css */
+body.resume #wrapper #resume .vcard h1.fn {
   display: block;
   float: left;
   font-size: 200%;
   font-weight: bold;
+  margin: 0 0 0.25em 0;
 }
-/* line 128, output/stylesheets/screen.css */
+/* line 138, output/stylesheets/screen.css */
 body.resume #wrapper #resume .vcard .addr, body.resume #wrapper #resume .vcard span.email {
   clear: both;
   display: block;
 }
-/* line 132, output/stylesheets/screen.css */
+/* line 142, output/stylesheets/screen.css */
 body.resume #wrapper #resume .vcard .addr span.type {
   display: none;
 }
-/* line 134, output/stylesheets/screen.css */
+/* line 144, output/stylesheets/screen.css */
 body.resume #wrapper #resume .vcard a.n:hover:after, body.resume #wrapper #resume .vcard a.fn:hover:after {
   content: " (" attr(rel) ") ";
   color: #636958;
   padding-left: 0.3em;
 }
-/* line 138, output/stylesheets/screen.css */
+/* line 148, output/stylesheets/screen.css */
 body.resume #wrapper #resume p {
   clear: both;
   margin: 1em 0;
   line-height: 1.5em;
 }
-/* line 142, output/stylesheets/screen.css */
+/* line 152, output/stylesheets/screen.css */
 body.resume #wrapper #resume ul {
   margin: 1em 2em 0 3em;
 }
-/* line 144, output/stylesheets/screen.css */
+/* line 154, output/stylesheets/screen.css */
 body.resume #wrapper #resume ul.inline {
   list-style: none;
   margin: 1em 0 0 1em;
 }
-/* line 147, output/stylesheets/screen.css */
+/* line 157, output/stylesheets/screen.css */
 body.resume #wrapper #resume ul.inline li {
   display: inline;
   padding: 0 0 0 0;
 }
-/* line 150, output/stylesheets/screen.css */
+/* line 160, output/stylesheets/screen.css */
 body.resume #wrapper #resume ul li {
   line-height: 1.5em;
   margin: 0 0 0.5em 0;
   list-style: disc;
 }
-/* line 154, output/stylesheets/screen.css */
+/* line 164, output/stylesheets/screen.css */
 body.resume #wrapper #resume .job {
-  margin: 1em 0;
   padding: 1em;
 }
-/* line 157, output/stylesheets/screen.css */
+/* line 166, output/stylesheets/screen.css */
 body.resume #wrapper #resume .job:hover {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
   background-color: rgba(248, 248, 236, 0.9);
 }
-/* line 160, output/stylesheets/screen.css */
+/* line 169, output/stylesheets/screen.css */
 body.resume #wrapper #resume .job h5 {
   float: left;
   margin: 0 0 1em 0;
 }
-/* line 163, output/stylesheets/screen.css */
+/* line 172, output/stylesheets/screen.css */
 body.resume #wrapper #resume .job h5.dates {
   float: right;
+}
+/* line 174, output/stylesheets/screen.css */
+body.resume #wrapper #footer {
+  display: none;
 }

@@ -15,7 +15,7 @@ filter:
     = link_to('Here you are!', 'images/cdm_resume.pdf')
 #resume
   .vcard
-    .fn
+    %h1.fn
       Chris Moore
     .addr
       %span.type
@@ -203,30 +203,30 @@ filter:
   %h2
     Languages
   %ul.inline
-    %li= link_to('Ruby', "http://ruby-lang.org"), ", "
-    %li= link_to('Haml', "http://haml-lang.com/"), ", "
-    %li= link_to('Sass', "http://sass-lang.com/"), ", "
-    %li XHTML,
-    %li CSS,
-    %li= link_to('PHP', "http://php.net"), ", "
-    %li= link_to('Perl', "http://www.perl.org/"), ", "
+    %li= link_to('Ruby', "http://ruby-lang.org")
+    %li= link_to('Haml', "http://haml-lang.com/")
+    %li= link_to('Sass', "http://sass-lang.com/")
+    %li XHTML
+    %li CSS
+    %li= link_to('PHP', "http://php.net")
+    %li= link_to('Perl', "http://www.perl.org/")
     %li Bash
   %h2 
     Frameworks
   %ul.inline
-    %li= link_to('Ruby on Rails', 'http://rubyonrails.com/'), ", "
-    %li= link_to('Sinatra', 'http://sinatrarb.com'), ", "
-    %li= link_to('Merb', 'http://merbivore.org'), ", "
-    %li= link_to('CodeIgniter', 'http://codeigniter.com/'), ", "
-    %li= link_to('ExtJS', 'http://extjs.com/'), ", "
+    %li= link_to('Ruby on Rails', 'http://rubyonrails.com/')
+    %li= link_to('Sinatra', 'http://sinatrarb.com')
+    %li= link_to('Merb', 'http://merbivore.org')
+    %li= link_to('CodeIgniter', 'http://codeigniter.com/')
+    %li= link_to('ExtJS', 'http://extjs.com/')
   %h2
     Operating Systems
   %ul.inline
-    %li= link_to('Mac OS X', "http://apple.com/macosx"), ", "
-    %li= link_to('Linux', "http://www.debian.org/"), ", "
-    %li= link_to('UNIX/BSD', "http://www.freebsd.org/"), ", "
-    %li= link_to('IBM AS400/iSeries', 'http://en.wikipedia.org/wiki/IBM_System_i'), ", "
-    %li= link_to('AIX', "http://www.ibm.com/aix"), ", "
+    %li= link_to('Mac OS X', "http://apple.com/macosx")
+    %li= link_to('Linux', "http://www.debian.org/")
+    %li= link_to('UNIX/BSD', "http://www.freebsd.org/")
+    %li= link_to('IBM AS400/iSeries', 'http://en.wikipedia.org/wiki/IBM_System_i')
+    %li= link_to('AIX', "http://www.ibm.com/aix")
     %li= link_to('Windows', "http://microsoft.com/")
   %h2
     Warehouse Management Systems

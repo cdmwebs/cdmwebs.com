@@ -2,6 +2,7 @@
 title:       cdmwebs.com
 created_at:  2010-01-10
 author:      Chris Moore
+body_class:  home
 filter:
   - haml
 ---
@@ -11,12 +12,11 @@ filter:
 #about
   %p 
     I'm Chris Moore. I live in northern Kentucky. I can be found all over the interwebs as
-    = link_to('cdmwebs', 'http://google.com/search?q=cdmwebs'), "."
+    = "#{link_to('cdmwebs', 'http://google.com/search?q=cdmwebs')}."
     I build web applications using Ruby on Rails.
   %p
-    If you'd like to get in touch, you can email me at
+    If you'd like to get in touch, you're more than welcome to email me at
     %a{:href => 'mailto:chris@cdmwebs.com'} chris@cdmwebs.com
-    anytime you like.
   %p
     Thanks for stopping by. Enjoy your visit.
 #flickr_badge_uber_wrapper

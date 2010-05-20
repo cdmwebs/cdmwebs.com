@@ -8,6 +8,7 @@ filter:    haml
     %meta{"http-equiv" => "content-type", :content => "text/html; charset=utf-8"}
     %title= @page.title
     %meta{:name => "author", :content => @page.author}
+    %link{:rel => "stylesheet", :href => "http://fonts.googleapis.com/css?family=Cantarell:regular,bold", :type => "text/css", :media => "screen, projection"}
     %link{:rel => "stylesheet", :href => "/stylesheets/screen.css", :type => "text/css", :media => "screen, projection"}
     %link{:rel => "stylesheet", :href => "/stylesheets/print.css", :type => "text/css", :media => "print"}
   %body{:class => @page.body_class}
@@ -28,7 +29,7 @@ filter:    haml
       #footer
         %p
           This website was created with 
-          = link_to('Webby', "http://webby.rubyforge.org"), "."
+          = link_to('Webby', "http://webby.rubyforge.org")
   :javascript
     var _gaq = _gaq || [];
     _gaq.push(
