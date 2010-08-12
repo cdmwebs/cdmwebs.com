@@ -1,5 +1,6 @@
 require 'compass'
 
+SITE.output_dir = '..'
 SITE.user = 'cdmwebs'
 SITE.host = '26webs.com'
 SITE.remote_dir = '/home/cdmwebs/sites/cdmwebs.com/current/public'
@@ -11,7 +12,7 @@ end
 
 Webby.site.sass_options.update(Compass.sass_engine_options)
 
-task :default => :build
+task :default => :clean_build
 
 desc 'deploy the site to the webserver'
 task :deploy => [:build, 'deploy:rsync']

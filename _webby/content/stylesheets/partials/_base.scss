@@ -1,0 +1,10 @@
+@mixin radius($units) {
+  -webkit-border-radius: $units;
+  -moz-border-radius: $units;
+  border-radius: $units; }
+
+@mixin opacity($opacity) {
+  opacity: $opacity;
+  -moz-opacity: $opacity;
+  -khtml-opacity: $opacity;
+  -ms-filter: unquote("progid:DXImageTransform.Microsoft.Alpha(Opacity=") + round($opacity * 100) + unquote(")"); }
