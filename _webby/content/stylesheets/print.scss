@@ -1,12 +1,11 @@
---- {
-  filter: sass;
-  extension: css;
-  layout: nil; }
+---
+  filter: sass
+  extension: css
+  layout: nil
+---
 
---- {}
-
-@import "reset.sass";
-@import "grid.sass";
+@import "reset";
+@import "grid";
 
 body {
   background-color: white;

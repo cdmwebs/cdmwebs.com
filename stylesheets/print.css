@@ -1,4 +1,4 @@
-/* line 1, /Users/cdmwebs/Sites/cdmwebs.com/_webby/content/stylesheets/partials/./_reset.sass */
+/* line 1, /Users/cdmwebs/Sites/cdmwebs.com/_webby/content/stylesheets/partials/./_reset.scss */
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
   margin: 0;
   padding: 0;
@@ -9,62 +9,62 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   background: transparent;
 }
 
-/* line 11, /Users/cdmwebs/Sites/cdmwebs.com/_webby/content/stylesheets/partials/./_reset.sass */
+/* line 10, /Users/cdmwebs/Sites/cdmwebs.com/_webby/content/stylesheets/partials/./_reset.scss */
 body {
   line-height: 1;
 }
 
-/* line 15, /Users/cdmwebs/Sites/cdmwebs.com/_webby/content/stylesheets/partials/./_reset.sass */
+/* line 13, /Users/cdmwebs/Sites/cdmwebs.com/_webby/content/stylesheets/partials/./_reset.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 19, /Users/cdmwebs/Sites/cdmwebs.com/_webby/content/stylesheets/partials/./_reset.sass */
+/* line 16, /Users/cdmwebs/Sites/cdmwebs.com/_webby/content/stylesheets/partials/./_reset.scss */
 blockquote, q {
   quotes: none;
 }
 
-/* line 24, /Users/cdmwebs/Sites/cdmwebs.com/_webby/content/stylesheets/partials/./_reset.sass */
+/* line 20, /Users/cdmwebs/Sites/cdmwebs.com/_webby/content/stylesheets/partials/./_reset.scss */
 blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 30, /Users/cdmwebs/Sites/cdmwebs.com/_webby/content/stylesheets/partials/./_reset.sass */
+/* line 25, /Users/cdmwebs/Sites/cdmwebs.com/_webby/content/stylesheets/partials/./_reset.scss */
 q:before, q:after {
   content: "";
   content: none;
 }
 
-/* line 35, /Users/cdmwebs/Sites/cdmwebs.com/_webby/content/stylesheets/partials/./_reset.sass */
+/* line 29, /Users/cdmwebs/Sites/cdmwebs.com/_webby/content/stylesheets/partials/./_reset.scss */
 :focus {
   outline: 0;
 }
 
-/* line 39, /Users/cdmwebs/Sites/cdmwebs.com/_webby/content/stylesheets/partials/./_reset.sass */
+/* line 32, /Users/cdmwebs/Sites/cdmwebs.com/_webby/content/stylesheets/partials/./_reset.scss */
 ins {
   text-decoration: none;
 }
 
-/* line 43, /Users/cdmwebs/Sites/cdmwebs.com/_webby/content/stylesheets/partials/./_reset.sass */
+/* line 35, /Users/cdmwebs/Sites/cdmwebs.com/_webby/content/stylesheets/partials/./_reset.scss */
 del {
   text-decoration: line-through;
 }
 
-/* line 47, /Users/cdmwebs/Sites/cdmwebs.com/_webby/content/stylesheets/partials/./_reset.sass */
+/* line 38, /Users/cdmwebs/Sites/cdmwebs.com/_webby/content/stylesheets/partials/./_reset.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 4, ../stylesheets/print.css */
+/* line 5, ../stylesheets/print.css */
 body {
   background-color: white;
   color: #333333;
   font: 80% Helvetica, "Lucida Grande", Tahoma, sans-serif;
 }
 
-/* line 8, ../stylesheets/print.css */
+/* line 10, ../stylesheets/print.css */
 h2 {
   border-bottom: 2px solid #e0e7b8;
   clear: both;
@@ -73,83 +73,83 @@ h2 {
   padding-bottom: 3px;
 }
 
-/* line 14, ../stylesheets/print.css */
+/* line 17, ../stylesheets/print.css */
 h3 {
   font-size: 120%;
 }
 
-/* line 16, ../stylesheets/print.css */
+/* line 20, ../stylesheets/print.css */
 h4 {
   font-size: 110%;
 }
 
-/* line 18, ../stylesheets/print.css */
+/* line 23, ../stylesheets/print.css */
 #header, #footer {
   display: none;
 }
 
-/* line 20, ../stylesheets/print.css */
+/* line 26, ../stylesheets/print.css */
 #wrapper {
   width: 720px;
   margin: 0 auto;
   overflow: hidden;
 }
-/* line 22, ../stylesheets/print.css */
+/* line 28, ../stylesheets/print.css */
 #wrapper a {
   color: #333333;
   text-decoration: none;
 }
-/* line 26, ../stylesheets/print.css */
+/* line 32, ../stylesheets/print.css */
 #wrapper .vcard .fn {
   display: block;
   float: left;
   font-size: 200%;
   font-weight: bold;
 }
-/* line 31, ../stylesheets/print.css */
+/* line 37, ../stylesheets/print.css */
 #wrapper .vcard .addr, #wrapper .vcard span.email {
   clear: both;
   display: block;
 }
-/* line 35, ../stylesheets/print.css */
+/* line 41, ../stylesheets/print.css */
 #wrapper .vcard .addr span.type {
   display: none;
 }
-/* line 37, ../stylesheets/print.css */
+/* line 43, ../stylesheets/print.css */
 #wrapper p {
   clear: both;
   margin: 1em 0;
   line-height: 1.5em;
 }
-/* line 41, ../stylesheets/print.css */
+/* line 47, ../stylesheets/print.css */
 #wrapper ul {
   margin: 1em 2em 0 3em;
 }
-/* line 43, ../stylesheets/print.css */
+/* line 49, ../stylesheets/print.css */
 #wrapper ul.inline {
   list-style: none;
   margin: 1em 0 0 1em;
 }
-/* line 46, ../stylesheets/print.css */
+/* line 52, ../stylesheets/print.css */
 #wrapper ul.inline li {
   display: inline;
 }
-/* line 48, ../stylesheets/print.css */
+/* line 54, ../stylesheets/print.css */
 #wrapper ul li {
   list-style: disc;
   line-height: 1.5em;
   margin: 0 0 0.5em 0;
 }
-/* line 52, ../stylesheets/print.css */
+/* line 58, ../stylesheets/print.css */
 #wrapper .job {
   margin: 2em 0;
 }
-/* line 54, ../stylesheets/print.css */
+/* line 60, ../stylesheets/print.css */
 #wrapper .job h5 {
   float: left;
   margin: 0 0 1em 0;
 }
-/* line 57, ../stylesheets/print.css */
+/* line 63, ../stylesheets/print.css */
 #wrapper .job h5.dates {
   float: right;
 }

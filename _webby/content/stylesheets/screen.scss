@@ -1,13 +1,12 @@
---- {
-  filter: sass;
-  extension: css;
-  layout: nil; }
+---
+  filter: sass
+  extension: css
+  layout: nil
+---
 
---- {}
-
-@import "reset.sass";
-@import "grid.sass";
-@import "base.sass";
+@import "reset";
+@import "grid";
+@import "base";
 
 $light_green: #e0e7b8;
 

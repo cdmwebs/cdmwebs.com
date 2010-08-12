@@ -1,4 +1,4 @@
-/* line 1, /Users/cdmwebs/Sites/cdmwebs.com/_webby/content/stylesheets/partials/./_reset.sass */
+/* line 1, /Users/cdmwebs/Sites/cdmwebs.com/_webby/content/stylesheets/partials/./_reset.scss */
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
   margin: 0;
   padding: 0;
@@ -9,55 +9,55 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   background: transparent;
 }
 
-/* line 11, /Users/cdmwebs/Sites/cdmwebs.com/_webby/content/stylesheets/partials/./_reset.sass */
+/* line 10, /Users/cdmwebs/Sites/cdmwebs.com/_webby/content/stylesheets/partials/./_reset.scss */
 body {
   line-height: 1;
 }
 
-/* line 15, /Users/cdmwebs/Sites/cdmwebs.com/_webby/content/stylesheets/partials/./_reset.sass */
+/* line 13, /Users/cdmwebs/Sites/cdmwebs.com/_webby/content/stylesheets/partials/./_reset.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 19, /Users/cdmwebs/Sites/cdmwebs.com/_webby/content/stylesheets/partials/./_reset.sass */
+/* line 16, /Users/cdmwebs/Sites/cdmwebs.com/_webby/content/stylesheets/partials/./_reset.scss */
 blockquote, q {
   quotes: none;
 }
 
-/* line 24, /Users/cdmwebs/Sites/cdmwebs.com/_webby/content/stylesheets/partials/./_reset.sass */
+/* line 20, /Users/cdmwebs/Sites/cdmwebs.com/_webby/content/stylesheets/partials/./_reset.scss */
 blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 30, /Users/cdmwebs/Sites/cdmwebs.com/_webby/content/stylesheets/partials/./_reset.sass */
+/* line 25, /Users/cdmwebs/Sites/cdmwebs.com/_webby/content/stylesheets/partials/./_reset.scss */
 q:before, q:after {
   content: "";
   content: none;
 }
 
-/* line 35, /Users/cdmwebs/Sites/cdmwebs.com/_webby/content/stylesheets/partials/./_reset.sass */
+/* line 29, /Users/cdmwebs/Sites/cdmwebs.com/_webby/content/stylesheets/partials/./_reset.scss */
 :focus {
   outline: 0;
 }
 
-/* line 39, /Users/cdmwebs/Sites/cdmwebs.com/_webby/content/stylesheets/partials/./_reset.sass */
+/* line 32, /Users/cdmwebs/Sites/cdmwebs.com/_webby/content/stylesheets/partials/./_reset.scss */
 ins {
   text-decoration: none;
 }
 
-/* line 43, /Users/cdmwebs/Sites/cdmwebs.com/_webby/content/stylesheets/partials/./_reset.sass */
+/* line 35, /Users/cdmwebs/Sites/cdmwebs.com/_webby/content/stylesheets/partials/./_reset.scss */
 del {
   text-decoration: line-through;
 }
 
-/* line 47, /Users/cdmwebs/Sites/cdmwebs.com/_webby/content/stylesheets/partials/./_reset.sass */
+/* line 38, /Users/cdmwebs/Sites/cdmwebs.com/_webby/content/stylesheets/partials/./_reset.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 7, ../stylesheets/screen.css */
+/* line 8, ../stylesheets/screen.css */
 body {
   vertical-align: baseline;
   background: url(/images/cincinnati.jpeg) no-repeat 50% 20% #29481f;
@@ -67,12 +67,12 @@ body {
   line-height: 140%;
   margin: 1em 0;
 }
-/* line 15, ../stylesheets/screen.css */
+/* line 16, ../stylesheets/screen.css */
 body p {
   margin: 1em 0;
 }
 
-/* line 18, ../stylesheets/screen.css */
+/* line 20, ../stylesheets/screen.css */
 body.home #wrapper {
   width: 720px;
   margin: 0 auto;
@@ -85,24 +85,24 @@ body.home #wrapper {
   padding: 1em 1em 0.5em 1em;
   margin-top: 8em;
 }
-/* line 25, ../stylesheets/screen.css */
+/* line 27, ../stylesheets/screen.css */
 body.home #wrapper a {
   color: #66cbff;
   text-shadow: 0 1px 0 #666666;
   text-decoration: none;
 }
-/* line 29, ../stylesheets/screen.css */
+/* line 31, ../stylesheets/screen.css */
 body.home #wrapper a:hover {
   text-decoration: underline;
 }
-/* line 31, ../stylesheets/screen.css */
+/* line 33, ../stylesheets/screen.css */
 body.home #wrapper #header {
   width: 720px;
   margin: 0 auto;
   overflow: hidden;
   margin: 1em 0;
 }
-/* line 34, ../stylesheets/screen.css */
+/* line 36, ../stylesheets/screen.css */
 body.home #wrapper #header h1 {
   margin: 0 10px;
   overflow: hidden;
@@ -113,7 +113,7 @@ body.home #wrapper #header h1 {
   font-size: 24pt;
   line-height: 100%;
 }
-/* line 39, ../stylesheets/screen.css */
+/* line 41, ../stylesheets/screen.css */
 body.home #wrapper #header ul {
   margin: 0 10px;
   overflow: hidden;
@@ -123,18 +123,18 @@ body.home #wrapper #header ul {
   margin-top: 0.5em;
   text-align: center;
 }
-/* line 43, ../stylesheets/screen.css */
+/* line 45, ../stylesheets/screen.css */
 body.home #wrapper #header ul li {
   display: inline;
   padding: 0 2px;
 }
-/* line 46, ../stylesheets/screen.css */
+/* line 48, ../stylesheets/screen.css */
 body.home #wrapper #content {
   width: 720px;
   margin: 0 auto;
   overflow: hidden;
 }
-/* line 48, ../stylesheets/screen.css */
+/* line 50, ../stylesheets/screen.css */
 body.home #wrapper #content #images {
   margin: 0 10px;
   overflow: hidden;
@@ -143,12 +143,12 @@ body.home #wrapper #content #images {
   width: 280px;
   padding-top: 1em;
 }
-/* line 51, ../stylesheets/screen.css */
+/* line 53, ../stylesheets/screen.css */
 body.home #wrapper #content #images img {
   padding-right: 5px;
   height: 128px;
 }
-/* line 54, ../stylesheets/screen.css */
+/* line 56, ../stylesheets/screen.css */
 body.home #wrapper #content #about {
   margin: 0 10px;
   overflow: hidden;
@@ -156,7 +156,7 @@ body.home #wrapper #content #about {
   display: inline;
   width: 400px;
 }
-/* line 56, ../stylesheets/screen.css */
+/* line 58, ../stylesheets/screen.css */
 body.home #wrapper #footer {
   margin: 0 10px;
   overflow: hidden;
@@ -164,17 +164,17 @@ body.home #wrapper #footer {
   display: inline;
   width: 700px;
 }
-/* line 58, ../stylesheets/screen.css */
+/* line 60, ../stylesheets/screen.css */
 body.home #wrapper #footer p {
   text-align: center;
   font-size: 80%;
   color: #999999;
 }
-/* line 62, ../stylesheets/screen.css */
+/* line 64, ../stylesheets/screen.css */
 body.home #wrapper #footer a {
   color: #bbbbbb;
 }
-/* line 64, ../stylesheets/screen.css */
+/* line 66, ../stylesheets/screen.css */
 body.home #flickr_badge_uber_wrapper {
   width: 720px;
   margin: 0 auto;
@@ -182,55 +182,55 @@ body.home #flickr_badge_uber_wrapper {
   padding: 2em 0 0 0;
   text-align: left;
 }
-/* line 68, ../stylesheets/screen.css */
+/* line 70, ../stylesheets/screen.css */
 body.home #flickr_badge_wrapper {
   padding: 10px 0 10px 0;
 }
-/* line 70, ../stylesheets/screen.css */
+/* line 72, ../stylesheets/screen.css */
 body.home .flickr_badge_image {
   margin: 0 10px 10px 10px;
   display: inline;
 }
-/* line 74, ../stylesheets/screen.css */
+/* line 76, ../stylesheets/screen.css */
 body.home #flickr_badge_source {
   text-align: left;
   margin: 0 10px 0 10px;
 }
-/* line 77, ../stylesheets/screen.css */
+/* line 79, ../stylesheets/screen.css */
 body.home #flickr_badge_icon {
   float: left;
   margin-right: 5px;
 }
-/* line 80, ../stylesheets/screen.css */
+/* line 82, ../stylesheets/screen.css */
 body.home #flickr_www {
   display: block;
   padding: 0 10px 0 10px !important;
   font-size: 80%;
 }
-/* line 84, ../stylesheets/screen.css */
+/* line 86, ../stylesheets/screen.css */
 body.home #flickr_www a {
   font: 100% Arial, Helvetica, Sans serif !important;
   color: #3993ff !important;
   font-weight: 600;
 }
-/* line 89, ../stylesheets/screen.css */
+/* line 91, ../stylesheets/screen.css */
 body.home #flickr_badge_uber_wrapper a:hover, body.home #flickr_badge_uber_wrapper a:link, body.home #flickr_badge_uber_wrapper a:active, body.home #flickr_badge_uber_wrapper a:visited {
   text-decoration: none !important;
   background: inherit !important;
   color: #3993ff;
 }
-/* line 93, ../stylesheets/screen.css */
+/* line 95, ../stylesheets/screen.css */
 body.home #flickr_badge_source {
   padding: 0 !important;
   font: 11px Arial, Helvetica, Sans serif !important;
   color: #666666 !important;
 }
 
-/* line 97, ../stylesheets/screen.css */
+/* line 100, ../stylesheets/screen.css */
 body.resume {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-/* line 99, ../stylesheets/screen.css */
+/* line 102, ../stylesheets/screen.css */
 body.resume #wrapper {
   width: 720px;
   margin: 0 auto;
@@ -247,17 +247,17 @@ body.resume #wrapper {
   padding: 1em 1em 2em 1em;
   text-shadow: 0 1px 0 #eeeeee;
 }
-/* line 107, ../stylesheets/screen.css */
+/* line 110, ../stylesheets/screen.css */
 body.resume #wrapper a {
   color: #1c7839;
   text-shadow: 0 1px 0 #bbbbbb;
   text-decoration: none;
 }
-/* line 111, ../stylesheets/screen.css */
+/* line 114, ../stylesheets/screen.css */
 body.resume #wrapper a:hover {
   text-decoration: underline;
 }
-/* line 113, ../stylesheets/screen.css */
+/* line 116, ../stylesheets/screen.css */
 body.resume #wrapper h2 {
   border-bottom: 2px solid #e0e7b8;
   clear: both;
@@ -265,15 +265,15 @@ body.resume #wrapper h2 {
   margin: 1em 0 0 0;
   padding-bottom: 3px;
 }
-/* line 119, ../stylesheets/screen.css */
+/* line 122, ../stylesheets/screen.css */
 body.resume #wrapper h3 {
   font-size: 120%;
 }
-/* line 121, ../stylesheets/screen.css */
+/* line 124, ../stylesheets/screen.css */
 body.resume #wrapper h4 {
   font-size: 110%;
 }
-/* line 123, ../stylesheets/screen.css */
+/* line 126, ../stylesheets/screen.css */
 body.resume #wrapper #header {
   margin: 0 10px;
   overflow: hidden;
@@ -282,7 +282,7 @@ body.resume #wrapper #header {
   width: 700px;
   text-align: center;
 }
-/* line 126, ../stylesheets/screen.css */
+/* line 129, ../stylesheets/screen.css */
 body.resume #wrapper #resume {
   margin: 0 10px;
   overflow: hidden;
@@ -290,7 +290,7 @@ body.resume #wrapper #resume {
   display: inline;
   width: 700px;
 }
-/* line 128, ../stylesheets/screen.css */
+/* line 131, ../stylesheets/screen.css */
 body.resume #wrapper #resume .vcard {
   padding: 10px;
   background: #f8f8ec;
@@ -298,7 +298,7 @@ body.resume #wrapper #resume .vcard {
   -moz-border-radius: 8px;
   border-radius: 8px;
 }
-/* line 132, ../stylesheets/screen.css */
+/* line 135, ../stylesheets/screen.css */
 body.resume #wrapper #resume .vcard h1.fn {
   display: block;
   float: left;
@@ -306,68 +306,68 @@ body.resume #wrapper #resume .vcard h1.fn {
   font-weight: bold;
   margin: 0 0 0.25em 0;
 }
-/* line 138, ../stylesheets/screen.css */
+/* line 141, ../stylesheets/screen.css */
 body.resume #wrapper #resume .vcard .addr, body.resume #wrapper #resume .vcard span.email {
   clear: both;
   display: block;
 }
-/* line 142, ../stylesheets/screen.css */
+/* line 145, ../stylesheets/screen.css */
 body.resume #wrapper #resume .vcard .addr span.type {
   display: none;
 }
-/* line 144, ../stylesheets/screen.css */
+/* line 147, ../stylesheets/screen.css */
 body.resume #wrapper #resume .vcard a.n:hover:after, body.resume #wrapper #resume .vcard a.fn:hover:after {
   content: " (" attr(rel) ") ";
   color: #636958;
   padding-left: 0.3em;
 }
-/* line 148, ../stylesheets/screen.css */
+/* line 151, ../stylesheets/screen.css */
 body.resume #wrapper #resume p {
   clear: both;
   margin: 1em 0;
   line-height: 1.5em;
 }
-/* line 152, ../stylesheets/screen.css */
+/* line 155, ../stylesheets/screen.css */
 body.resume #wrapper #resume ul {
   margin: 1em 2em 0 3em;
 }
-/* line 154, ../stylesheets/screen.css */
+/* line 157, ../stylesheets/screen.css */
 body.resume #wrapper #resume ul.inline {
   list-style: none;
   margin: 1em 0 0 1em;
 }
-/* line 157, ../stylesheets/screen.css */
+/* line 160, ../stylesheets/screen.css */
 body.resume #wrapper #resume ul.inline li {
   display: inline;
   padding: 0 0 0 0;
 }
-/* line 160, ../stylesheets/screen.css */
+/* line 163, ../stylesheets/screen.css */
 body.resume #wrapper #resume ul li {
   line-height: 1.5em;
   margin: 0 0 0.5em 0;
   list-style: disc;
 }
-/* line 164, ../stylesheets/screen.css */
+/* line 167, ../stylesheets/screen.css */
 body.resume #wrapper #resume .job {
   padding: 1em;
 }
-/* line 166, ../stylesheets/screen.css */
+/* line 169, ../stylesheets/screen.css */
 body.resume #wrapper #resume .job:hover {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
   background-color: rgba(248, 248, 236, 0.9);
 }
-/* line 169, ../stylesheets/screen.css */
+/* line 172, ../stylesheets/screen.css */
 body.resume #wrapper #resume .job h5 {
   float: left;
   margin: 0 0 1em 0;
 }
-/* line 172, ../stylesheets/screen.css */
+/* line 175, ../stylesheets/screen.css */
 body.resume #wrapper #resume .job h5.dates {
   float: right;
 }
-/* line 174, ../stylesheets/screen.css */
+/* line 177, ../stylesheets/screen.css */
 body.resume #wrapper #footer {
   display: none;
 }
