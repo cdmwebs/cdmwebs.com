@@ -4,7 +4,7 @@ SITE.output_dir = '..'
 SITE.user = 'cdmwebs'
 SITE.host = '26webs.com'
 SITE.remote_dir = '/home/cdmwebs/sites/cdmwebs.com/current/public'
-SITE.rsync_args = ['-rczP', '--exclude-from=../.exclude', '--rsh=ssh']
+SITE.rsync_args = ['-rczP', '--delete', '--exclude-from=../.exclude', '--rsh=ssh']
 
 Compass.configuration do |config|
   config.project_path = File.dirname(__FILE__)
