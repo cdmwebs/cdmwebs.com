@@ -3,6 +3,7 @@ title:       cdmwebs.com
 created_at:  2010-01-10
 author:      Chris Moore
 body_class:  home
+header:      true
 filter:
   - haml
 ---
