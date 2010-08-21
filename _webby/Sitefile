@@ -2,7 +2,7 @@ require 'compass'
 
 SITE.output_dir = '..'
 SITE.user = 'cdmwebs'
-SITE.host = '26webs.com'
+SITE.host = 'cdmwebs.com'
 SITE.remote_dir = '/home/cdmwebs/sites/cdmwebs.com/current/public'
 SITE.rsync_args = ['-rczP', '--delete', '--exclude-from=../.exclude', '--rsh=ssh']
 
@@ -10,6 +10,8 @@ Compass.configuration do |config|
   config.project_path = File.dirname(__FILE__)
   config.sass_dir = File.join('content', 'stylesheets', 'partials')
   config.sass_options = { :syntax => :scss }  
+  config.css_dir = '../css'
+  config.output_style = :compressed
 end
 
 Webby.site.sass_options.update(Compass.sass_engine_options)

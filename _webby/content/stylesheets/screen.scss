@@ -4,15 +4,17 @@
   layout: nil
 ---
 
-@import "reset";
+@import "blueprint/reset";
+@import "compass/utilities";
+@import "compass/css3/border-radius";
+@import "compass/css3/opacity";
 @import "grid";
-@import "base";
 
 $light_green: #e0e7b8;
 
 body {
   vertical-align: baseline;
-  background: url(/images/cincinnati.jpeg) no-repeat 50% 20% #29481f;
+  background: url(/images/cincinnati.jpeg) no-repeat 50% 0% #29481f;
   background-attachment: fixed;
   font-size: 90%;
   font-family: "Cantarell", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -24,10 +26,11 @@ body {
 body.home {
   #wrapper {
     @include row;
-    @include radius(10px);
-    background-color: rgba(0, 0, 0, 0.85);
+    @include border-radius(10px);
+    @include opacity(.9);
+    background-color: #333;
     color: white;
-    padding: 1em 1em 0.5em 1em;
+    padding: 1.5em;
     margin-top: 8em;
     a {
       color: #66cbff;
@@ -49,6 +52,7 @@ body.home {
         text-align: center;
         li {
           display: inline;
+          text-transform: lowercase;
           padding: 0 2px; } } }
     #content {
       @include row;
@@ -107,7 +111,7 @@ body.resume {
   #wrapper {
     @include row;
     @include opacity(0.9);
-    @include radius(4px);
+    @include border-radius(4px);
     background-color: white;
     color: #333333;
     padding: 1em 1em 2em 1em;
@@ -136,7 +140,7 @@ body.resume {
       .vcard {
         padding: 10px;
         background: #f8f8ec;
-        @include radius(8px);
+        @include border-radius(8px);
         h1.fn {
           display: block;
           float: left;
@@ -172,7 +176,7 @@ body.resume {
       .job {
         padding: 1em;
         &:hover {
-          @include radius(5px);
+          @include border-radius(5px);
           background-color: rgba(248, 248, 236, 0.9); }
         h5 {
           float: left;

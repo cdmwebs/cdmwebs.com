@@ -1,0 +1,14 @@
+---
+  filter: sass
+  extension: css
+  layout: nil
+---
+
+@import "blueprint/ie";
+@import "compass/css3/opacity";
+@include blueprint-ie;
+
+body {
+  #wrapper {
+    @include opacity(.95);
+    text-align: left; } }
