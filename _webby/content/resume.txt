@@ -8,7 +8,7 @@ filter:
   - haml
 ---
 #header
-  %p 
+  %p
     = link_to("&larr; Back", '/')
     |
     Would you prefer a PDF?
@@ -42,6 +42,21 @@ filter:
     Experience
   .job.present
     %h3
+      %a{ :href => "http://gaslightsoftware.com/" }
+        Gaslight Software
+    %h4
+      Rubyist &amp; JavaScript-er
+    %h5
+      Blue Ash, OH
+    %h5.dates
+      2011 - Present
+    %p
+      Solve problems with Agile processes.
+    %ul.duties
+      %li
+        We work with Rails, Backbone, CouchDB, node.js on a daily basis. We
+        like solving complex problems simply and efficiently.
+    %h3
       %a{ :href => "http://26webs.com/" }
         26Webs LLC
     %h4
@@ -52,7 +67,7 @@ filter:
       2005 - Present
     %p
       Work with businesses, organizations and entrepreneurs to create and
-      implement	technology solutions to promote efficiency and improve
+      implement technology solutions to promote efficiency and improve
       communication.
     %ul.duties
       %li
@@ -91,7 +106,7 @@ filter:
       2009
     %p
       Design and develop web based applications using Linux, the Ruby on
-      Rails	framework, ExtJS Framework and MySQL databases.
+      Rails framework, ExtJS Framework and MySQL databases.
     %ul.duties
       %li
         Design and develop RoR application for jury management.
@@ -123,7 +138,7 @@ filter:
       2008
     %p
       Design and develop web based applications using Linux, the Ruby on
-      Rails	framework and MySQL databases. Also, support legacy PHP and ASP
+      Rails framework and MySQL databases. Also, support legacy PHP and ASP
       applications.
     %ul.duties
       %li
@@ -147,7 +162,7 @@ filter:
       2001 - 2005
     %p
       Manage all projects related to distribution operations and technology
-      for all adidas America Distribution accounts.	Develop, implement and
+      for all adidas America Distribution accounts. Develop, implement and
       maintain strategic solutions to increase efficiency and facility
       throughput.
     %ul.duties
@@ -187,7 +202,7 @@ filter:
       1998-2001
     %p
       Provide first level user support to all system users, including warehouse
-      associates,	office staff and management. Supported all servers, radio
+      associates, office staff and management. Supported all servers, radio
       frequency networks and devices, cabling and networks.
     %ul.duties
       %li
@@ -211,7 +226,7 @@ filter:
     %li= link_to('PHP', "http://php.net")
     %li= link_to('Perl', "http://www.perl.org/")
     %li Bash
-  %h2 
+  %h2
     Frameworks
   %ul.inline
     %li= link_to('Ruby on Rails', 'http://rubyonrails.com/')
