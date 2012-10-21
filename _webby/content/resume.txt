@@ -56,6 +56,7 @@ filter:
       %li
         We work with Rails, Backbone, CouchDB, node.js on a daily basis. We
         like solving complex problems simply and efficiently.
+  .job
     %h3
       %a{ :href => "http://26webs.com/" }
         26Webs LLC

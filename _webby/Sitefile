@@ -1,3 +1,4 @@
+# vim: set ft=ruby:
 require 'compass'
 
 SITE.output_dir = '..'

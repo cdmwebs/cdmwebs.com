@@ -4,7 +4,7 @@
   layout: nil
 ---
 
-@import "blueprint/reset";
+@import "compass/reset";
 @import "compass/utilities";
 @import "compass/css3/border-radius";
 @import "compass/css3/opacity";
@@ -16,9 +16,10 @@ body {
   vertical-align: baseline;
   background: url(/images/cincinnati.jpeg) no-repeat 50% 0% #29481f;
   background-attachment: fixed;
-  font-size: 90%;
-  font-family: "Cantarell", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  line-height: 140%;
+  background-size: cover;
+  font-family: 'Helvetica', sans-serif;
+  font-size: 100%;
+  line-height: 120%;
   margin: 1em 0;
   p {
     margin: 1em 0; } }
@@ -27,11 +28,11 @@ body.home {
   #wrapper {
     @include row;
     @include border-radius(10px);
-    @include opacity(.9);
-    background-color: #333;
+    @include opacity(.95);
+    background-color: #222;
     color: white;
     padding: 1.5em;
-    margin-top: 8em;
+    margin-top: 4%;
     a {
       color: #66cbff;
       text-shadow: 0 1px 0 #666666;
@@ -43,8 +44,9 @@ body.home {
       margin: 1em 0;
       h1 {
         @include column(5);
+        font-family: "Yanone Kaffeesatz", "Helvetica Neue", Helvetica, Arial, sans-serif;
         color: white;
-        font-size: 24pt;
+        font-size: 4em;
         line-height: 100%; }
       ul {
         @include column(7);
@@ -110,7 +112,7 @@ body.resume {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   #wrapper {
     @include row;
-    @include opacity(0.9);
+    @include opacity(0.95);
     @include border-radius(4px);
     background-color: white;
     color: #333333;
@@ -175,8 +177,10 @@ body.resume {
           list-style: disc; } }
       .job {
         padding: 1em;
+        &:first-child {
+          @include border-radius(25px 0);
+        }
         &:hover {
-          @include border-radius(5px);
           background-color: rgba(248, 248, 236, 0.9); }
         h5 {
           float: left;

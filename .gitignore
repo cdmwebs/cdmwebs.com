@@ -1,3 +1,7 @@
 .DS_Store
 .sass-cache/
 .cairn
+
+/_webby/.bundle
+/_webby/bin
+/_webby/vendor/ruby
