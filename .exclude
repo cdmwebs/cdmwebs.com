@@ -3,4 +3,6 @@ _webby
 .exclude
 .git
 .gitignore
+.rbenv-version
 s/
+thinkup
