@@ -1,0 +1,43 @@
+#!/bin/sh
+
+set -e
+
+echo ""
+echo " Setting up..."
+echo ""
+
+#
+# Check for Bundler
+#
+if test ! $(which bundle)
+then
+  echo "  x You need to install Bundler:"
+  echo "    gem install bundler"
+  exit
+else
+  echo "  + Bundler found."
+fi
+
+#
+# Install gems
+#
+echo "  + Bootstrapping your Rubies."
+bundle install --without production --local --path vendor --quiet
+
+#
+# Setting up database.yml
+#
+echo "  + Setup config/database.yml"
+cp config/database.example.yml config/database.yml
+
+#
+# Setting up database
+#
+echo "  + Setting up database..."
+rake db:setup
+
+echo ""
+echo "Ok, setup complete. Run"
+echo "  rails server"
+echo "to start the application."
+
