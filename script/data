@@ -1,0 +1,11 @@
+#!/bin/bash
+
+set -e
+
+dropdb DB_NAME_dev
+createdb DB_NAME_dev
+
+heroku pgbackups:capture --expire --app HEROKU_APP_NAME
+curl -Lo latest.dump `heroku pgbackups:url --app HEROKU_APP_NAME`
+pg_restore --verbose --no-acl --no-owner -d DB_NAME_dev latest.dump
+

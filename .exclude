@@ -1,8 +1,0 @@
-_webby
-.cairn
-.exclude
-.git
-.gitignore
-.rbenv-version
-s/
-thinkup

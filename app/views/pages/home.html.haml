@@ -1,0 +1,32 @@
+!!! 5
+%html
+  %head
+    %meta{charset: "utf-8"}
+    %meta{name: "viewport", content: "width=device-width, initial-scale=1.0"}
+    %meta{name: "description", content: "Chris Moore is a family man, partner at Gaslight, software developer and friend of the innovation community."}
+    %title= content_for?(:title) ? yield(:title) : "Chris Moore | Cincinnati, Ohio"
+    = content_for(:head)
+    = stylesheet_link_tag  "http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,900"
+    = stylesheet_link_tag  "application"
+    = csrf_meta_tags
+  %body
+    .row
+      #main.columns
+        .cdmwebs--about
+          :markdown
+            # Hey, I'm Chris Moore.
+
+            I live in Northern Kentucky, near Cincinnati, Ohio. You can find me
+            just about anywhere online using the handle 'cdmwebs'. I'm a partner at
+            [Gaslight][gaslight], where I build web applications using Ruby on Rails.
+
+            If you'd like to get in touch, you can email me at [chris@cdmwebs.com][me].
+            You should follow me on Twitter at [@cdmwebs](https://twitter.com/cdmwebs).
+
+            I blog [here][] as well as on the [company site][gblog].
+
+            [me]: mailto:chris@cdmwebs.com
+            [gaslight]: http://gaslight.co
+            [here]: /blog
+            [gblog]: http://gaslight.co/blog?author=cdmwebs
+
