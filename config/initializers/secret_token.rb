@@ -9,4 +9,5 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-Cdmwebs::Application.config.secret_key_base = 'c646fea69175946798c1b7cb93b19bb571aaac0fe3f1468569555ad44f46939bd43d9dd08f73e1fceadf70178c7233c73944cb018103509bd1788147d7988d60'
+Cdmwebs::Application.config.secret_key_base = ENV.fetch('SECRET_KEY_BASE')
+
